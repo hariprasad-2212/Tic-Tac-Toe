@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;     /* title on top, game below */
+    justify-content: center;    /* centers vertically */
+    align-items: center;        /* centers horizontally */
+    height: 100vh;
+    margin: 0;
+    background-color: #85a660;
+    color: hsla(87, 34%, 13%, 0.859);
+}
+
+h1 {
+    text-align: center;
+}
+
+#game {
+    display: grid;
+    grid-template-columns: repeat(3, 95px);  /* 3 columns */
+    gap: 6px;
+    padding: 10px;
+    background-color: rgb(44, 81, 40);
+    border-radius: 12px;
+}
+
+.box {
+    background-color: #FF784F;
+    height: 95px;
+    width: 95px;
+    border: 0;
+    border-radius: 12px;
+    font-size: larger;
+    color: #252e1c;
+}
+
+.score{
+    padding: 3px;
+     width: 200px;
+    display: inline;
+}
+
+#card{
+
+    font-size: large;
+    margin: 10px;
+
+}
+
+#Play{
+    border-radius: 5px;
+    border: transparent;
+    width: 120px;
+    height: 40px;
+    font-size: large;
+    background-color: rgb(44, 81, 40);
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: rgb(93, 148, 91);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 15px;
+
+    display: none;
+    z-index: 1000;
+}
